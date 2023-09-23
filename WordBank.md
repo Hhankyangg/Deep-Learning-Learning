@@ -41,6 +41,13 @@
 
 `Neural Network` 神经网络
 
-`Overfitting` 过拟合
+`Over fitting` 过拟合
 
-`backpropagation` 反向传播
+`back propagation` 反向传播
+
+`batch` “笔”
+
+`1 epoch` see all the batches once -> Shuffle after each epoch
+ 
+`hyperparameter` 超参数
+ 
