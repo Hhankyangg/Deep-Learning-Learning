@@ -50,4 +50,9 @@
 `1 epoch` see all the batches once -> Shuffle after each epoch
  
 `hyperparameter` 超参数
- 
+
+`momentum`
+
+`saddle point`
+
+`critical point`
