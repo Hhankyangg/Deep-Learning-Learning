@@ -60,3 +60,38 @@ Split your training data into training set and validation set for model selectio
 沿梯度下降时，考虑之前走过的路径（获得“冲力”）
 
 ![momentum](momentum.png)
+
+### 自动调整学习速率（Learning Rate）
+
+为了更好的达到 critical point，在陡峭的地方走慢点，在平缓的地方走快点。为每个参数客制化学习速率。
+
+**Training stuck ≠ Small Gradient**
+
+#### Adam: RMSProp + Momentum
+
+**RMSProp:** 对每个参数，针对不同的阶段，使用不同的学习速率参数。且可以指定对于现数据和之前数据的权重比。
+
+从：
+$$
+  \theta_i^{t+1} \leftarrow \theta_i^{t} - \eta g_i^t
+$$
+到：
+$$
+  \theta_i^{t+1} \leftarrow \theta_i^{t} - \frac{\eta}{\sigma_i^t} g_i^t
+  \\
+  \sigma_i^t = \sqrt{\alpha(\sigma_i^{t-1})^2 + (1-\alpha)(g_i^t)^2}
+$$
+
+$\alpha$ 是 hyper parameter
+
+**Adam:** 
+$$
+  \theta_i^{t+1} \leftarrow \theta_i^{t} - \frac{\eta}{\sigma_i^t} m_i^t
+$$
+
+$m_i^t$: Momentum: weighted sum of the previous gradients.
+
+#### Learning Rate Scheduling
+
+Learning Rate 随着时间（训练时间）自己改变。有以下两种主流方法：
+![LR-Scheduling](LR-Scheduling.png)
