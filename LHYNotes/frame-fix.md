@@ -95,3 +95,22 @@ $m_i^t$: Momentum: weighted sum of the previous gradients.
 
 Learning Rate 随着时间（训练时间）自己改变。有以下两种主流方法：
 ![LR-Scheduling](LR-Scheduling.png)
+
+### 用分类模型引出 - Loss Function 也对训练有影响
+
+**分类模型:**
+- 用 one-hot vector 表示不同类别
+  ```
+  y_1 = [1, 0, 0]
+  y_1 = [0, 1, 0]
+  y_1 = [0, 0, 1]
+  ```
+- 用 soft-max 将 数值向量归一化为一个概率分布向量，且各个概率之和为1
+- Loss Function 用 cross-entropy（交叉熵）而不用 MSE
+  $$
+    e = - \sum_i \hat{y_i} \ln y'_i
+  $$
+  **Minimizing cross-entropy == maximizing likelihood**
+  ![mse-vs-ce](mse-vs-ce.png)
+
+由上可得：改变 Loss Function 也会对 optimization 造成影响。

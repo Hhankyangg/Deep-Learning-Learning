@@ -27,13 +27,13 @@
 
 `Meta Learning`
 
-`model`  `weight`  `feature`  `bias` 
+`model`  `weight`  `feature`  `bias` `label`
 
 `Gradient Descent` 梯度下降法
 
 `Model Bias` 模型限制
 
-`sigmoid func`
+`sigmoid function`
 
 `Activation Function` 激活函数
 
@@ -56,3 +56,9 @@
 `saddle point`
 
 `critical point`
+
+`cross-entropy` 交叉熵
+
+`MSE (Mean Square Error)` 方差
+
+`soft-max function`
