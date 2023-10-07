@@ -62,3 +62,17 @@
 `MSE (Mean Square Error)` 方差
 
 `soft-max function`
+
+`convolutional neural networks` 卷积神经网络
+
+`receptive field` 感受野
+
+`kernel size` 
+
+`parameter sharing`
+
+`subsampling` 子采样
+
+`pooling`
+
+`flatten`
