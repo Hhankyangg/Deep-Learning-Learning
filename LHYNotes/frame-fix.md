@@ -33,7 +33,7 @@
 
 ### 模型复杂度如何权衡？
 
-![trade-off](trade-off.png)
+![trade-off](./images/trade-off.png)
 
 Split your training data into training set and validation set for model selection
 
@@ -59,7 +59,7 @@ Split your training data into training set and validation set for model selectio
 
 沿梯度下降时，考虑之前走过的路径（获得“冲力”）
 
-![momentum](momentum.png)
+![momentum](./images/momentum.png)
 
 ### 自动调整学习速率（Learning Rate）
 
@@ -94,7 +94,7 @@ $m_i^t$: Momentum: weighted sum of the previous gradients.
 #### Learning Rate Scheduling
 
 Learning Rate 随着时间（训练时间）自己改变。有以下两种主流方法：
-![LR-Scheduling](LR-Scheduling.png)
+![LR-Scheduling](./images/LR-Scheduling.png)
 
 ### 用分类模型引出 - Loss Function 也对训练有影响
 
@@ -111,6 +111,6 @@ Learning Rate 随着时间（训练时间）自己改变。有以下两种主流
     e = - \sum_i \hat{y_i} \ln y'_i
   $$
   **Minimizing cross-entropy == maximizing likelihood**
-  ![mse-vs-ce](mse-vs-ce.png)
+  ![mse-vs-ce](./images/mse-vs-ce.png)
 
 由上可得：改变 Loss Function 也会对 optimization 造成影响。

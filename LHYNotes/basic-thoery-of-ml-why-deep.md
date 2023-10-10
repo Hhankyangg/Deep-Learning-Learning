@@ -48,7 +48,7 @@ $$
 - Larger $N$ and smaller $|H|$ $\rightarrow$ $|L(h^{train}, D_{all}) - L(h^{all}, D_{all})| \le \delta$
 - Smaller $|H|$ $\rightarrow$ Larger $L(h^{all}, D_{all})$
 
-![pain-H](pain-H.png)
+![pain-H](./images/pain-H.png)
 
 鱼与熊掌是否可以兼得？**YES, DEEP LEARNING**
 

@@ -14,7 +14,7 @@
 
 > 像人一样，按照一张图上有特征的部分来识别一张图像
 
-![optim1-bird](optim1-bird.png)
+![optim1-bird](./images/optim1-bird.png)
 
 体现在神经网络的设计上，我们可以让一个神经元（neuron）负责一个 pattern，我们称其为 `Receptive Field` （感受野）
 
@@ -26,7 +26,7 @@
 
 **经典的 Receptive Field 设计：**
 
-![rf-design](rf-design.png)
+![rf-design](./images/rf-design.png)
 
 - stride 一般设计成 1 或 2
 - padding 时可以全设成 0，也有别的补值方法
@@ -42,7 +42,7 @@
 
 **经典的 Parameter Sharing 设计：**
 
-![ps-design](ps-design.png)
+![ps-design](./images/ps-design.png)
 
 - 分享有同样参数的 neurons 叫做 filter
 
@@ -50,7 +50,7 @@
 
 > 用到 卷积层（Convolutional Layer）的神经网络就叫 CNN
 
-![cnn1](cnn1.png)
+![cnn1](./images/cnn1.png)
 
 ## 理解方式二：用 filter 理解 CNN
 
@@ -62,15 +62,15 @@
 
 假设我们有一个 6 * 6 的黑白图片，每个 filter 的大小为 3 * 3，stride 为 1：
 
-![filter1](filter1.png)
+![filter1](./images/filter1.png)
 
 我们用第一个 filter 扫过全图，并计算在每个区域上的元素积之和，可以得到一个 4 * 4 的新矩阵
 
-![filter2](filter2.png)
+![filter2](./images/filter2.png)
 
 类似地，我们用每个 filter 扫过全图，每个 filter 都可以得到一个 4 * 4 的矩阵，我们将这些新的矩阵形成的新的“图片”称为 Feature Map（特征图）。特征图的 channel 数为 filter 的数量
 
-![filter3](filter3.png)
+![filter3](./images/filter3.png)
 
 将第一层产生的特征图当成图片，再进行 convolution，得到一张长宽为 3 * 3 的特征图。如此重复下去……
 
@@ -87,11 +87,11 @@
 
 我们可以用多种方法pooling，比如在 4 * 4 的特征图上，每 2 * 2 的区域选一个最大数，以此组成一张新的 2 * 2 的图片。这种 pooling 比较常用，我们叫他 Max Pooling
 
-![pooling](pooling.png)
+![pooling](./images/pooling.png)
 
 我们将卷积层和 pooling 反复交替使用，最后再扁平化后通过 soft-max，实现图像的分类识别：
 
-![cnn2](cnn2.png)
+![cnn2](./images/cnn2.png)
 
 > 随着算力的提生，图像识别对细节要求的增加，pooling 也变得可以选择有或者没有。
 
@@ -107,7 +107,7 @@ CNN是为影像设计，但不局限于图像识别。比如 Alpha Go：
   - 每个位置用 48 个 channel 表示这个位置的情况
 - 下一个落子的位置实际就是一个“分类”问题
 
-![alpha-go](alpha-go.png)
+![alpha-go](./images/alpha-go.png)
 
 CNN 还能用在其它领域……
 
