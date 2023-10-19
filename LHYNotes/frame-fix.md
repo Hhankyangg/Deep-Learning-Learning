@@ -114,3 +114,27 @@ Learning Rate 随着时间（训练时间）自己改变。有以下两种主流
   ![mse-vs-ce](./images/mse-vs-ce.png)
 
 由上可得：改变 Loss Function 也会对 optimization 造成影响。
+
+### Normalization
+
+因为 feature 的差异太大，可能造成 loss function 函数的 error surface 太过于崎岖，不利于 optimization
+我们希望 feature 的范围相对差异较小：
+
+#### Feature Normalization
+
+![feature-norm](images/feature-norm.png)
+
+#### Batch normalization
+
+在 deep learning 中，尽管最开始输入的 feature 们都经过了 normalization，但是他们经过 activation function 后数值又进行改变，对于新的一层来说，他们是全新的 feature，所以我们需要再进行 normalization
+
+![batch-norm](images/batch-norm.png)
+
+为了实现 batch normalization，我们需要让 feature 们并行进行（一个 batch 一起运算）
+
+**Testing** 时怎么办？
+We do not always have batch at testing stage.
+
+![bn-test](images/bn-test.png)
+
+除了 batch normalization，还有各式各样的 normalization... ...
