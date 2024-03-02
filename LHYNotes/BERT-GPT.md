@@ -2,7 +2,7 @@
 
 ## BERT
 
-Bert 本质就是一个 Transformer Encoder。输入一个 Vector Set，输出一个 Vector Set。他的训练方式是 Self-supervised Learning，也就是不需要 label 的。所以他的训练被分为了两个任务，这种对自监督模型先进行得训练又被成为预训练。预训练后的模可以通过 fine-tune（微调）用于其他下游任务中。
+Bert 本质就是一个 Transformer Encoder。输入一个 Vector Set，输出一个 Vector Set。他的训练方式是 Self-supervised Learning，也就是不需要 label 的。他的训练被分为了两个任务，这种对自监督模型先进行得训练又被成为预训练。预训练后的模可以通过 fine-tune（微调）用于其他下游任务中。
 
 ### Pre-training Task
 
