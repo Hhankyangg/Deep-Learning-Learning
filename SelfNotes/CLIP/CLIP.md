@@ -86,11 +86,11 @@ cialized, complex, or abstract tasks such as satellite image classification (Eur
 
 **Few-shot** Using Linear Probe.
 
-![](few-shot.png)
+<img src="few-shot.png" style="zoom: 50%;" />
 
 ### Representation Learning
 
-![](linear-probe.png)
+<img src="linear-probe.png" style="zoom:67%;" />
 
 ## Limitation
 

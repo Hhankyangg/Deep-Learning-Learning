@@ -66,7 +66,7 @@ Diffusion Model 产生图像的过程：对一张噪音不断 Denoise，最终�
 
 ![](images/noise-predictor.png)
 
-## Stable Diffusion, DALL-E, Imagen 的共同点
+## Text-Condition Image Generation
 
 文生图的基本 Framework：
 
