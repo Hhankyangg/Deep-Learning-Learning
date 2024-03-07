@@ -81,8 +81,7 @@ Solutions:
 **Zero-shot**
 
 - Zero-shot CLIP performed nice on simple/individual object dataset such as OxfordPets and Birdsnap.
-- Zero-shot CLIP is quite weak on several spe-
-cialized, complex, or abstract tasks such as satellite image classification (EuroSAT and RESISC45), lymph node tumor detection (PatchCamelyon), counting objects in synthetic scenes (CLEVRCounts), self-driving related tasks such as German traffic sign recognition (GTSRB), recognizing distance to the nearest car (KITTI Distance).
+- Zero-shot CLIP is quite weak on several specialized, complex, or abstract tasks such as satellite image classification (EuroSAT and RESISC45), lymph node tumor detection (PatchCamelyon), counting objects in synthetic scenes (CLEVRCounts), self-driving related tasks such as German traffic sign recognition (GTSRB), recognizing distance to the nearest car (KITTI Distance).
 
 **Few-shot** Using Linear Probe.
 
