@@ -72,8 +72,7 @@ Assisted-manual Stage -> Semi-automatic Stage -> Fully Automatic Stage
 
 **Assisted-manual Stage.** (1) SAM was trained using common public segmentation datasets. (2) After sufficient data annotation (by human), SAM was retrained using only newly annotated masks. (3) As more masks were collected, the image encoder was scaled from ViT-B to ViT-H and other architectural details evolved.
 
-**Semi-automatic Stage.** aiming to increase the *diversity*. We first automatically detected confident
-masks. Then we presented annotators with images prefilled with these masks and asked them to annotate any additional unannotated objects.
+**Semi-automatic Stage.** aiming to increase the *diversity*. We first automatically detected confident masks. Then we presented annotators with images prefilled with these masks and asked them to annotate any additional unannotated objects.
 
 **Fully Automatic Stage.** In the final stage, annotation was fully *automatic*. (1) At the start of this stage, we had collected enough masks to greatly improve the model, including the diverse masks from the previous stage. (2) we prompted the model with a 32×32 regular grid of points and for each point predicted a set of masks that may correspond to valid objects. (3) After selecting the confident and stable masks, we applied non-maximal suppression (NMS) to filter duplicates. To further improve the quality of smaller masks, we also processed multiple overlapping zoomed-in image crops.
 
