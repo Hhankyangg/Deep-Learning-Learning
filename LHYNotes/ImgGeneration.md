@@ -32,7 +32,7 @@ VAE 由一个 Encoder 和一个 Decoder 组成。在使用他生成图像时只�
 
 Diffusion 分为两个过程，Add noise 和 Denoise：
 
-![](diffusion-1.png)
+![](images/diffusion-1.png)
 
 ### GAN
 
